@@ -17,12 +17,8 @@ class Janela(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle(
-            "Simulador de Ultrafiltração Glomerular"
-        )
-
-        self.resize(500,400)
-
+        self.setWindowTitle("Determinantes da Filtração Glomerular")
+        self.resize(700,600)
 
         self.glom = Glomerulo()
 
@@ -133,10 +129,10 @@ class Janela(QWidget):
             """
         )
 
-app = QApplication(sys.argv)
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
 
-janela = Janela()
+    janela = Janela()
+    janela.showMaximized()
 
-janela.show()
-
-sys.exit(app.exec())
+    sys.exit(app.exec())
