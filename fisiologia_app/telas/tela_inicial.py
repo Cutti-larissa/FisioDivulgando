@@ -35,7 +35,7 @@ class TelaInicial(QWidget):
         layout_card.setContentsMargins(40, 48, 40, 48)
         layout_card.setSpacing(10)
 
-        titulo = QLabel("Fisiologia")
+        titulo = QLabel("FisioSimulando!")
         titulo.setObjectName("tituloApp")
         titulo.setAlignment(Qt.AlignCenter)
 

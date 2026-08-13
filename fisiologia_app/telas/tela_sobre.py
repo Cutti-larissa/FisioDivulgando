@@ -37,21 +37,20 @@ class TelaSobre(QWidget):
         texto.setHtml(
             """
             <p style="font-size:14px; line-height:1.6;">
-            O <b>Fisiologia</b> é um aplicativo de simuladores interativos criado para apoiar
-            o ensino e o estudo de Fisiologia. A ideia é permitir que conceitos que costumam
-            ser abstratos — como os determinantes da filtração glomerular, curvas de pressão
-            e outros fenômenos fisiológicos — possam ser explorados de forma visual e
-            experimental, ajustando parâmetros em tempo real e observando o efeito nas
-            variáveis calculadas.
+            O <b>FisioSimulando</b> é um aplicativo de simuladores interativos criado para apoiar
+            o ensino e o estudo de Fisiologia.
             </p>
             <p style="font-size:14px; line-height:1.6;">
             Cada assunto é organizado como um <b>módulo</b> independente, com seu próprio
-            simulador, exercícios práticos e material teórico de apoio. Novos módulos podem
-            ser adicionados conforme o conteúdo da disciplina avança.
+            simulador, exercícios práticos e material teórico de apoio.
             </p>
             <p style="font-size:14px; line-height:1.6;">
             Este projeto foi desenvolvido como uma ferramenta de apoio didático, unindo
-            programação e fisiologia para tornar o aprendizado mais intuitivo.
+            programação e fisiologia para tornar o aprendizado mais intuitivo. Para a sua construção teve como 
+            base o projeto [NOME DO PROJETO QUE É UTILIZADO] 
+            </p>
+            <p style="font-size:14px; line-height:1.6;">
+            Este simulador foi construído por alunos de graduação de Informática Biomédica participantes do projeto de extenção FisioDivulgando. 
             </p>
             """
         )

@@ -15,7 +15,7 @@ class JanelaPrincipal(QMainWindow):
 
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Fisiologia")
+        self.setWindowTitle("FisioSimulando")
         self.resize(1100, 720)
 
         self.stack = QStackedWidget()
