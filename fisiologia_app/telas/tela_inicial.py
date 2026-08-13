@@ -32,10 +32,10 @@ class TelaInicial(QWidget):
         card.setGraphicsEffect(sombra)
 
         layout_card = QVBoxLayout(card)
-        layout_card.setContentsMargins(40, 48, 40, 48)
+        layout_card.setContentsMargins(38, 50, 38, 50)
         layout_card.setSpacing(10)
 
-        titulo = QLabel("FisioSimulando!")
+        titulo = QLabel("FisioSimulando")
         titulo.setObjectName("tituloApp")
         titulo.setAlignment(Qt.AlignCenter)
 
