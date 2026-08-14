@@ -97,8 +97,8 @@ class TelaSelecaoModulos(QWidget):
             ("glomerulo", "Determinantes da Filtração Glomerular",
              "Explore como fluxo plasmático, pressão hidrostática, Kf e proteínas "
              "plasmáticas afetam a FPN.", True),
-            ("cardio", "Débito Cardíaco", "Em desenvolvimento.", False),
-            ("respiratorio", "Mecânica Respiratória", "Em desenvolvimento.", False),
+            ("cardio", "Metabolismo da Água - Disturbio", "Em desenvolvimento.", False),
+            ("respiratorio", "Metabolismo da Água - Sistema", "Em desenvolvimento.", False),
         ]
 
         for i, (chave, titulo_mod, desc, disponivel) in enumerate(modulos):
