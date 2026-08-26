@@ -44,8 +44,8 @@ class CardModulo(QFrame):
         if not disponivel:
             selo = QLabel("Em breve")
             selo.setStyleSheet(
-                "color:#9CA3AF; font-size:11px; font-weight:600; "
-                "background-color:#F3F4F6; border-radius:6px; padding:3px 8px;"
+                "color:#FFF9F1; font-size:11px; font-weight:600; "
+                "background-color:#0F5257; border-radius:6px; padding:3px 8px;"
             )
             selo.setFixedWidth(70)
             layout.addWidget(selo)
@@ -74,7 +74,7 @@ class TelaSelecaoModulos(QWidget):
 
         topo = QHBoxLayout()
         botao_voltar = QPushButton("← Voltar")
-        botao_voltar.setObjectName("botaoSecundario")
+        botao_voltar.setObjectName("botaoVoltar")
         botao_voltar.setFixedWidth(120)
         botao_voltar.clicked.connect(self.voltar.emit)
         topo.addWidget(botao_voltar)
@@ -84,7 +84,7 @@ class TelaSelecaoModulos(QWidget):
         titulo.setObjectName("tituloTela")
 
         subtitulo = QLabel("Selecione o tema que deseja estudar")
-        subtitulo.setStyleSheet("color:#6B7280;")
+        subtitulo.setStyleSheet("color:#FFF9F1;")
 
         area_rolagem = QScrollArea()
         area_rolagem.setWidgetResizable(True)

@@ -1,19 +1,20 @@
 # estilos.py
 # Paleta e QSS centralizados para manter o app com visual consistente.
 
-COR_FUNDO = "#F5DFBD"
-COR_FUNDO_SIDEBAR = "#44586B"
-COR_FUNDO_SIDEBAR_HOVER = "#374151"
-COR_PRIMARIA = "#3A8F8C"
-COR_PRIMARIA_HOVER = "#3651D4"
-COR_SECUNDARIA = "#2EC4B6"
-COR_TEXTO = "#1F2937"
-COR_TEXTO_CLARO = "#F9FAFB"
-COR_TEXTO_MUTED = "#6B7280"
-COR_CARD = "#D5E3E7"
+COR_FUNDO = "#0F5257"
+COR_FUNDO_SIDEBAR = "#0A2342"
+COR_FUNDO_SIDEBAR_HOVER = "#003B46"
+COR_PRIMARIA = "#2EC4B6"
+COR_PRIMARIA_HOVER = "#07575B"
+COR_SECUNDARIA = "#66A5AD"
+COR_SECUNDARIA_HOVER = "#D0FAF6"
+COR_TEXTO = "#0A0F14"
+COR_TEXTO_CLARO = "#FFF9F1"
+COR_TEXTO_MUTED = "#C4DFE6"
+COR_CARD = "#E6FFFA"
 COR_BORDA = "#E5E7EB"
-COR_PERIGO = "#B45953"
-COR_PERIGO_HOVER = "#DC2626"
+COR_PERIGO = "#BB0B0B"
+COR_PERIGO_HOVER ="#DC2626"
 
 FONTE_BASE = "Segoe UI"
 
@@ -37,13 +38,13 @@ QLabel#tituloApp {{
 
 QLabel#subtituloApp {{
     font-size: 15px;
-    color: {COR_TEXTO_MUTED};
+    color: {COR_PRIMARIA};
 }}
 
 QLabel#tituloTela {{
     font-size: 24px;
     font-weight: 700;
-    color: {COR_TEXTO};
+    color: {COR_TEXTO_CLARO};
 }}
 
 QLabel#tituloModulo {{
@@ -99,7 +100,7 @@ QPushButton:hover {{
 }}
 
 QPushButton:pressed {{
-    background-color: #2D46B9;
+    background-color: {COR_PRIMARIA_HOVER};
 }}
 
 QPushButton#botaoSecundario {{
@@ -109,7 +110,17 @@ QPushButton#botaoSecundario {{
 }}
 
 QPushButton#botaoSecundario:hover {{
-    background-color: #EEF1FF;
+    background-color: {COR_SECUNDARIA_HOVER};
+}}
+
+QPushButton#botaoVoltar {{
+    background-color: transparent;
+    color: {COR_CARD};
+    border: 1.5px solid {COR_CARD};
+}}
+
+QPushButton#botaoVoltar:hover {{
+    background-color: {COR_FUNDO_SIDEBAR_HOVER};
 }}
 
 QPushButton#botaoPerigo {{
@@ -142,7 +153,7 @@ QPushButton#botaoSidebar:hover {{
 }}
 
 QPushButton#botaoSidebarAtivo {{
-    background-color: {COR_PRIMARIA};
+    background-color: {COR_PRIMARIA_HOVER};
     color: white;
     text-align: left;
     padding: 12px 16px;

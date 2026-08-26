@@ -22,7 +22,7 @@ class GrupoParametro(QFrame):
         self.label_titulo = QLabel(titulo)
         self.label_titulo.setStyleSheet("font-weight:600;")
         self.label_valor = QLabel()
-        self.label_valor.setStyleSheet(f"color:#4361EE; font-weight:700;")
+        self.label_valor.setStyleSheet(f"color:#07575B; font-weight:700;")
         cabecalho.addWidget(self.label_titulo)
         cabecalho.addStretch()
         cabecalho.addWidget(self.label_valor)
@@ -80,7 +80,7 @@ class SimuladorGlomerulo(QWidget):
             "para observar o efeito sobre a PEUF e a FPN."
         )
         subtitulo.setWordWrap(True)
-        subtitulo.setStyleSheet("color:#6B7280;")
+        subtitulo.setStyleSheet("color:#C4DFE6;")
 
         layout.addWidget(titulo)
         layout.addWidget(subtitulo)
@@ -122,12 +122,12 @@ class SimuladorGlomerulo(QWidget):
         layout_resultado.setSpacing(4)
 
         label_resultado_titulo = QLabel("Resultado")
-        label_resultado_titulo.setStyleSheet("font-weight:700; color:#3730A3;")
+        label_resultado_titulo.setStyleSheet("font-weight:700; color:#003B46;")
 
         self.label_peuf = QLabel()
         self.label_peuf.setStyleSheet("font-size:15px;")
         self.label_fpn = QLabel()
-        self.label_fpn.setStyleSheet("font-size:20px; font-weight:700; color:#3730A3;")
+        self.label_fpn.setStyleSheet("font-size:20px; font-weight:700; color:#003B46;")
 
         layout_resultado.addWidget(label_resultado_titulo)
         layout_resultado.addWidget(self.label_peuf)
@@ -136,7 +136,7 @@ class SimuladorGlomerulo(QWidget):
         layout.addWidget(painel_resultado)
 
         botao_reset = QPushButton("Restaurar valores de referência")
-        botao_reset.setObjectName("botaoSecundario")
+        botao_reset.setObjectName("botaoVoltar")
         botao_reset.setMinimumWidth(280)
         botao_reset.setMaximumWidth(320)
         botao_reset.clicked.connect(self.resetar)

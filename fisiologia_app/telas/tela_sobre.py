@@ -17,7 +17,7 @@ class TelaSobre(QWidget):
 
         topo = QHBoxLayout()
         botao_voltar = QPushButton("← Voltar")
-        botao_voltar.setObjectName("botaoSecundario")
+        botao_voltar.setObjectName("botaoVoltar")
         botao_voltar.setFixedWidth(120)
         botao_voltar.clicked.connect(self.voltar.emit)
         topo.addWidget(botao_voltar)
